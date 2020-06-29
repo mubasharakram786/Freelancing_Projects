@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>New Estimate</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: "open sans", sans-serif;
+        }
+    </style>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-2 col-2 p-0 m-0">
+                <div id="wrapper">
+                    <div class="sidebar-wrapper">
+                        <ul class="list-unstyled">
+                            <li class="p-3  mx-1 logo-img" style="background-color: #fff;">
+                                <img src="images/logo.png" style="width: 100px;" alt="">
+                            </li>
+                            <li class="py-4 estimate-link">
+                                <a href="javaScript:;">
+                                    <span class="fa fa-calculator  pt-2 px-3 estimate" title="Estimate"
+                                        data-toggle="tooltip" data-placement="right"></span>
+                                    <span class="sidebar-link">
+                                        Estimate</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-10 col-10 p-0 m-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="dashboard-navbar">
+                    <a class="navbar-brand" href="#">Estimate# 2</a>
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                example@gmail.com
+                            </a>
+                            <div class="dropdown-menu pt-2" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#"> <span class="fa fa-user"></span> My Account</a>
+                                <a class="dropdown-item" href="#"> <span class="	fa fa-sign-out"></span> Logout</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-5">
+                            <a class="nav-link" href="#">
+                                <span class="fa fa-question-circle" style="font-size: 20px;"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- </div> -->
+                </nav>
+                <section id="dashboard-content">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-12 col-md-7 col-sm-12 col-12">
+                                <div class="estimate-btns">
+                                    <button class="btn btn-secondary cancel-btn">cancel</button>
+                                    <button class="btn btn-success save-btn">Save</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="new-estimate-container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <button class="" id="add-client-btn" data-toggle="modal" data-target="#add_clients">
+                                        <i class="fa fa-plus-circle"></i>
+                                        Add Client
+                                    </button>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <form action="" method="" id="new-estimate-form">
+                                        <span class="estimate-control-label">Estimate#</span>
+                                        <input type="text" placeholder="0000">
+                                        <br>
+                                        <span class="estimate-control-label">Date</span>
+                                        <input type="text" placeholder="0000">
+                                        <br>
+                                        <span class="estimate-control-label">PO Number</span>
+                                        <input type="text" placeholder="0000">
+                                        <br>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <section id="item-container">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-4 col-sm-4 col-12 font-weight-bold">Description</div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-12 font-weight-bold">Rate</div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-12 font-weight-bold">Quantity</div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-12 font-weight-bold">Tax</div>
+                                    <div class="col-lg-1 col-md-2 col-sm-2 col-12 font-weight-bold">Total</div>
+
+                                </div>
+                            </div>
+                        </section>
+                        <hr style="border: 1px solid #000;">
+                        <section class="add-item">
+                            <button class="" id="add-item-btn">
+                                <i class="fa fa-plus-circle"></i>
+                                Add Item
+                            </button>
+                        </section>
+                        <section class="net-amount">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-6"></div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item ">Subtotal
+                                                <span class="float-right subtotal">$0.00</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                Markup
+                                                <span class="float-right">
+                                                    <a href="javaScript:;" class="net-link">add</a>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item">Discount
+                                                <span class="float-right">
+                                                    <a href="javaScript:;" class="net-link">add</a>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item">Request a deposit
+                                                <span class="float-right">
+                                                    <a href="javaScript:;" class="net-link">add</a>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item">Payment schedule
+                                                <span class="float-right">
+                                                    <a href="javaScript:;" class="net-link">add</a>
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item">Tax
+                                                <span class="float-right tax">
+                                                    $0.00
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item font-weight-bold">Total
+                                                <span class="float-right total ">
+                                                    $0.00
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="contract">
+                            <span class="d-block">Contract <i class="badge badge-success ">Pro</i></span>
+                            <hr style="border:1px solid #000">
+                            <div class="contract-link" data-toggle="modal" data-target="#upgradeContract">
+                                <a href="#">Contract
+                                    <span class="float-right contract-name">No contract</span>
+                                </a>
+                            </div>
+                        </section>
+                        <section id="signatures">
+                            <span class="d-block">Signatures </span>
+                            <hr style="border:1px solid #000">
+                            <div class="wrapper">
+                                <br />
+                                <label>
+                                    <!-- <input type="checkbox" name="switch" class="checkbox" /> -->
+                                    <div class="switch"></div>
+                                </label>
+                                <br />
+                            </div>
+                        </section>
+                        <section id="photos-upload">
+                            <span class="d-block">Photos <i class="badge badge-primary ">Pro</i></span>
+                            <hr style="border:1px solid #000; margin-bottom: 50px ;">
+                            <form action="">
+                                <input type="file" name="" id="">
+                            </form>
+                            <a href="javaScript:;" class="d-block upgrade-upload-photos" data-toggle="modal"
+                                data-target="#upgradePhotos">
+                                <i class="fa fa-image"></i>
+                                <span> Choose Photos</span>
+                            </a>
+                            <small class="d-block my-4">*You can upload up to 20 photos.</small>
+                        </section>
+                        <section id="attachment-upload">
+                            <span class="d-block">Attachments <i class="badge badge-primary ">Pro</i></span>
+                            <hr style="border:1px solid #000; margin-bottom: 50px ;">
+                            <form action="">
+                                <input type="file" name="" id="">
+                            </form>
+                            <a href="javaScript:;" class="d-block upgrade-upload-attachment" data-toggle="modal"
+                                data-target="#upgradeAttachments">
+                                <i class="fa fa-image"></i>
+                                <span> Select Attachment</span>
+                            </a>
+                            <small class="d-block my-4">*You can upload up to 10 attachments.</small>
+                        </section>
+                    </section>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--Add Client Modal-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="add_clients">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="add_client_header">
+                    <span class="modal-title" style="font-size: 18px;font-weight: 400;">New Client</span>
+                    <span class="float-right">
+                        <a href="javaScript:;" class="my_client_btn">My Clients</a>
+                    </span>
+
+                </div>
+                <div class="modal-body">
+                    <form action="" method="" id="basic-info-form">
+                        <span class="form-heading">Basic Information</span>
+                        <hr style="border:1px solid #000;">
+                        <span class="client-label">Name</span>
+                        <input type="text" name="client-name" id="">
+                        <br>
+                        <span class="client-label">Email Address</span>
+                        <input type="email" name="email" id=""> <br>
+                        <span class="client-label">Phone(mobile)</span>
+                        <input type="text" name="phone" id=""> <br>
+                        <span class="client-label">mobile(other)</span>
+                        <input type="text" name="other" id="">
+                    </form>
+                    <form action="" method="" id="address-form">
+                        <span class="form-heading">Billing Address</span>
+                        <hr style="border:1px solid #000;">
+                        <span class="client-label">Address</span>
+                        <input type="text" name="client-address" id=""> <br>
+                        <span class="client-label">Address2</span>
+                        <input type="email" name="address2" id=""> <br>
+                        <span class="client-label">City</span>
+                        <input type="text" name="city" id=""> <br>
+                        <span class="client-label">State</span>
+                        <input type="text" name="state" id=""> <br>
+                        <span class="client-label">Zip/Postal Code</span>
+                        <input type="text" name="zip/postal code" id="">
+                    </form>
+                    <div class="my-4 ">
+                        <span class="form-heading float-left" style="font-size: 15px;">Billing Address is
+                            different
+                            than
+                            Service Address</span>
+                        <div class="item d-inline-block float-right">
+                            <input type="checkbox" />
+                        </div>
+                        <br> <br>
+                        <span class=" form-heading float-left" style="font-size: 15px;">Private Notes</span>
+                        <div class="item d-inline-block float-right">
+                            <input type="checkbox" class="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="cancel-client-btn" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="add-client-btn">Add </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contract Modal-->
+    <div class="modal fade" id="upgradeContract" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a type="" class="close" id="close-modal-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">Cancel</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="images/modal-logo.png" style="width: 150px;" alt="">
+                    </div>
+                    <span class="d-block lead w-100 text-center upgrade-text">Upgrade now to continue accessing <br>
+                        these
+                        Pro
+                        features</span>
+                    <ul class="list-unstyled" id="premium-features">
+                        <li class="text-left lead py-2 "> <i class="pr-2 fa fa-file-archive-o"></i>Logo Branding &amp;
+                            Contracts <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="pr-2 fa fa-file-photo-o"></i>Photo &amp; File
+                            Attachments <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="fa fa-bell-o"></i> Client
+                            Notifications <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="	fa fa-file-text-o"></i> Work Orders <i
+                                class="material-icons check-icon">check</i></li>
+
+                        <li class=" py-2  lead text-left"> <i class="fa fa-address-card-o"> </i> Quickbook
+                            Sync <i class="material-icons check-icon">check</i>
+                        </li>
+                    </ul>
+
+                    <a href="javaScript:;" class="upgrade-btn">Upgrade Now</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Photos Modal-->
+    <div class="modal fade" id="upgradePhotos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a type="" class="close" id="close-modal-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">Cancel</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="images/modal-logo.png" style="width: 150px;" alt="">
+                    </div>
+                    <span class="d-block lead w-100 text-center upgrade-text">Upgrade now to continue accessing <br>
+                        these
+                        Pro
+                        features</span>
+                    <ul class="list-unstyled" id="premium-features">
+                        <li class="text-left lead py-2 "> <i class="pr-2 fa fa-file-archive-o"></i>Logo Branding &amp;
+                            Contracts <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="pr-2 fa fa-file-photo-o"></i>Photo &amp; File
+                            Attachments <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="fa fa-bell-o"></i> Client
+                            Notifications <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="	fa fa-file-text-o"></i> Work Orders <i
+                                class="material-icons check-icon">check</i></li>
+
+                        <li class=" py-2  lead text-left"> <i class="fa fa-address-card-o"> </i> Quickbook
+                            Sync <i class="material-icons check-icon">check</i>
+                        </li>
+                    </ul>
+
+                    <a href="javaScript:;" class="upgrade-btn">Upgrade Now</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Attachment Modal-->
+    <div class="modal fade" id="upgradeAttachments" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a type="" class="close" id="close-modal-btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">Cancel</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="images/modal-logo.png" style="width: 150px;" alt="">
+                    </div>
+                    <span class="d-block lead w-100 text-center upgrade-text">Upgrade now to continue accessing <br>
+                        these
+                        Pro
+                        features</span>
+                    <ul class="list-unstyled" id="premium-features">
+                        <li class="text-left lead py-2 "> <i class="pr-2 fa fa-file-archive-o"></i>Logo Branding &amp;
+                            Contracts <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="pr-2 fa fa-file-photo-o"></i>Photo &amp; File
+                            Attachments <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="fa fa-bell-o"></i> Client
+                            Notifications <i class="material-icons check-icon">check</i>
+                        </li>
+                        <li class=" py-2 lead text-left"> <i class="	fa fa-file-text-o"></i> Work Orders <i
+                                class="material-icons check-icon">check</i></li>
+
+                        <li class=" py-2  lead text-left"> <i class="fa fa-address-card-o"> </i> Quickbook
+                            Sync <i class="material-icons check-icon">check</i>
+                        </li>
+                    </ul>
+
+                    <a href="javaScript:;" class="upgrade-btn">Upgrade Now</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

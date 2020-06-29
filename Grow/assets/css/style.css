@@ -1,0 +1,773 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: cover;
+  font-family: "Gotham", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "muli", sans-serif;
+}
+
+span {
+  background-color: #66ffcc;
+  font-size: 14px;
+  padding: 0.4rem 1rem;
+  margin: 0 0 2.5rem 0;
+}
+
+button {
+  background-color: #e28;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1rem;
+}
+
+a {
+  color: #e28;
+  padding: 0.2rem 0.5rem;
+}
+
+a:hover {
+  color: #e28;
+}
+
+._title {
+  font-weight: 300;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.form-wrapper {
+  max-width: 470px;
+  margin: 0rem auto;
+  background-color: #f6f5f6;
+}
+
+.form-wrapper form {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+}
+
+.form-wrapper .field input {
+  max-width: 470px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  min-height: 37px;
+  border: 0.5px solid #f0f0f0;
+  padding: 0 1rem;
+  border-radius: 2px;
+}
+
+.btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.btn button {
+  background: #e28;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  margin-left: -10px;
+  padding: 0.6rem 3.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+  font-weight: 500;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.forgot_pswd {
+  margin-left: 6rem;
+}
+
+.forgot_pswd a {
+  font-size: 11px;
+}
+
+.forgot_pswd a:hover {
+  text-decoration: none;
+}
+
+.btn.btn-new {
+  background: #fff;
+  color: #000;
+}
+
+.forgot_pswd {
+  /* float: right; */
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.forgot_pswd:hover {
+  text-decoration: none;
+}
+
+.form-wrapper label {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.breakpoint {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.breakpoint p {
+  width: 20%;
+  border-bottom: 1px solid #959595;
+  line-height: 0.1em;
+  margin: 10px auto;
+}
+
+.breakpoint p span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+/*-----------Navbnar Style----------*/
+#navbar {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#navbar .navbar-nav .nav-item {
+  padding: 0rem 0.9rem;
+  font-size: 0.9em;
+  font-weight: 500 !important;
+}
+
+#navbar .navbar-nav .nav-item a.btn {
+  background-color: #e28 !important;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+}
+
+#navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #66ffcc;
+}
+
+#navbar .navbar-nav .nav-item.active {
+  color: #66ffcc !important;
+}
+
+@media screen and (max-width: 992px) {
+  #navbar .navbar-nav .nav-item .nav-link {
+    padding-left: 2rem !important;
+  }
+  #navbar .navbar-nav .nav-item .nav-link:hover {
+    background-color: #66ffcc !important;
+    color: #fff !important;
+  }
+}
+
+.intro {
+  min-height: 100vh;
+  background-image: linear-gradient(145deg, #f8f8f8, #f0f0f0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.intro > div {
+  margin: 50px;
+}
+
+.intro .intro-data {
+  max-width: 600px;
+}
+
+.intro .intro-image {
+  max-width: 400px;
+}
+
+.intro h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.intro button.btn-trail {
+  background-color: #e28;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients > div {
+  margin: 25px;
+}
+
+section div#bis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section div#bis .bis-image {
+  max-width: 600px;
+  margin: 1rem 2rem;
+}
+
+section#bis h1.bis-heading {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 5rem 0rem;
+}
+
+main section.warehouse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.warehouse > div.data-warehouse {
+  max-width: 500px;
+  margin: 1rem 3rem;
+}
+
+main section.warehouse > div.warehouse-image {
+  max-width: 600px;
+  margin: 1rem 2.5rem;
+}
+
+main section.metrics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.metrics .metric-image {
+  max-width: 600px;
+  margin: 1rem 2.5rem;
+}
+
+main section.metrics .metric-data {
+  max-width: 500px;
+  margin: 1rem 3rem;
+}
+
+main section.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.share > div.share-data {
+  max-width: 500px;
+  margin: 1rem 3rem;
+}
+
+main section.share > div.share-image {
+  max-width: 600px;
+  margin: 1rem 2.5rem;
+}
+
+main section#built {
+  background-image: linear-gradient(135deg, #f8f8f8, #f0f0f0);
+  padding: 5rem 0rem;
+}
+
+main section#built h1 {
+  font-size: 3.5em;
+  padding: 4rem 0rem;
+  font-weight: 500;
+}
+
+main div.built {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.built > div.box {
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  vertical-align: middle;
+  margin: 20px 50px;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+div.built > div.box .box-content {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+div.built > div.box .box-content p {
+  visibility: hidden;
+}
+
+div.built > div.box:hover > .box-content p {
+  visibility: visible;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+main section div.stb {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+}
+
+main section div.stb > div {
+  margin: 1rem 1.5rem;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main section div.stb .card .card-text {
+  font-size: 15px;
+}
+
+main section.features {
+  padding: 1rem;
+  background-image: linear-gradient(135deg, #6fc, #1eb);
+}
+
+main section.features .fcontainer {
+  background-color: #333;
+  margin: 10px;
+  padding: 5rem;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+main section.features .fcontainer .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.features .fcontainer .slider span {
+  color: #fff !important;
+}
+
+.slider .slider-data {
+  padding: 4rem 0rem;
+  max-width: 600px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.slider-image {
+  max-width: 600px;
+}
+
+main section.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: linear-gradient(135deg, #6fc, #1eb);
+  padding: 5rem 0rem 2rem 0rem;
+}
+
+main section.contact .form-data {
+  max-width: 500px;
+  margin: 0rem 4rem;
+}
+
+main section.contact .contact-form {
+  max-width: 600px;
+  margin: 0rem 4rem;
+}
+
+.contact-form-wrapper {
+  max-width: 600px;
+  margin: 0rem auto;
+  background-color: #f6f5f6;
+}
+
+.contact-form-wrapper form {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+}
+
+.contact-form-wrapper .field input {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 0.5rem;
+  min-height: 37px;
+  border: 0.5px solid #f0f0f0;
+  padding: 0 1rem;
+  border-radius: 2px;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222), to(#333));
+  background-image: linear-gradient(180deg, #222, #333);
+  padding: 3rem 1rem;
+}
+
+footer ul li:first-child {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+  color: #fff;
+}
+
+footer ul li a:hover {
+  color: #6fc;
+}
+
+/*-----------------Pricing-------------------*/
+header.pricing {
+  background-color: #66ffcc;
+  padding: 3rem 0rem;
+}
+
+.pricing-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-table > div {
+  max-width: 450px;
+  margin: 10px;
+}
+
+.pricing-table .card label {
+  position: absolute;
+  color: #000;
+  top: 48%;
+  left: 0px;
+  font-size: 16px;
+}
+
+.pricing-table .professional .card label {
+  position: absolute;
+  color: #000;
+  top: 52%;
+  left: 0px;
+  font-size: 16px;
+}
+
+.card {
+  font-family: "Gotham", sans-serif;
+}
+
+.card span {
+  background-color: transparent;
+}
+
+.card span.basic-price {
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.card p {
+  font-weight: 600;
+}
+
+.card .dollar-sign {
+  font-size: 1em;
+  font-weight: bold;
+  position: absolute;
+  top: 33%;
+  left: 0;
+}
+
+.card .start-text {
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 33%;
+}
+
+.enterprise .card .start-text {
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 28%;
+}
+
+.professional .card .dollar-sign {
+  font-size: 1em;
+  font-weight: bold;
+  position: absolute;
+  top: 38%;
+  left: 0;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.basic .card .basic-term {
+  background-color: #333;
+  padding: 2rem;
+}
+
+.basic .card .basic-term h4 {
+  color: #959595;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.basic .card .basic-term p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.professional .card .professional-term {
+  background-color: #333;
+  padding: 2rem;
+}
+
+.professional .card .professional-term h4 {
+  color: #959595;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.professional .card .professional-term p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.enterprise .card {
+  background-color: rgba(231, 231, 231, 0.4);
+}
+
+.enterprise .card .enterprise-term {
+  background-color: #333;
+  padding: 2rem;
+}
+
+.enterprise .card .enterprise-term h4 {
+  color: #959595;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.enterprise .card .enterprise-term p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.upgrade-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.upgrade-prices .card-title {
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.upgrade-prices > div {
+  margin: 1rem;
+}
+
+.upgrade-prices p.card-text {
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 1.5rem;
+}
+
+.upgrade-prices .card label {
+  position: absolute;
+  font-size: 1em;
+  color: #000;
+  top: 62%;
+  left: 30px;
+  font-size: 16px;
+}
+
+.card .price {
+  font-weight: 500;
+}
+
+.upgrade-prices .card .card-body {
+  background-color: rgba(231, 231, 231, 0.4);
+}
+
+table tr td i.fa-circle,
+table tr td i.fa-circle-o {
+  color: #66ffcc;
+}
+
+table td {
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */

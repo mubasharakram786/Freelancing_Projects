@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="48px" viewBox="0 0 42 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-v2-Copy-5" transform="translate(-699.000000, -3260.000000)" stroke="#11EEBB" stroke-width="2">
+            <g id="Group-29-Copy" transform="translate(569.000000, 3209.000000)">
+                <g id="Group-17" transform="translate(93.000000, 52.000000)">
+                    <g id="Group" transform="translate(38.000000, 0.000000)">
+                        <circle id="Oval" cx="33.7132" cy="3.627" r="3.5718"></circle>
+                        <circle id="Oval" cx="20.8848" cy="41.7064" r="3.5718"></circle>
+                        <line x1="19.3478" y1="18.7016" x2="31.2156" y2="6.1248" id="Shape"></line>
+                        <line x1="17.1566" y1="27.0714" x2="20.004" y2="38.249" id="Shape"></line>
+                        <circle id="Oval" cx="37.4832" cy="34.581" r="2.4472"></circle>
+                        <circle id="Oval" cx="2.4472" cy="30.1284" r="2.4472"></circle>
+                        <circle id="Oval" cx="5.293" cy="2.4472" r="2.4472"></circle>
+                        <g transform="translate(6.000000, 4.000000)" id="Shape">
+                            <line x1="0.3438" y1="0.649" x2="1.3028" y2="2.404"></line>
+                            <line x1="3.081" y1="5.6578" x2="5.7482" y2="10.5384" stroke-dasharray="1.854,1.854"></line>
+                            <line x1="6.6374" y1="12.1654" x2="7.5964" y2="13.9204"></line>
+                        </g>
+                        <g transform="translate(20.000000, 24.000000)" id="Shape">
+                            <line x1="15.344" y1="9.4126" x2="13.6096" y2="8.4164"></line>
+                            <line x1="9.7282" y1="6.1874" x2="3.906" y2="2.8434" stroke-dasharray="2.238,2.238"></line>
+                            <line x1="1.9652" y1="1.7288" x2="0.231" y2="0.7328"></line>
+                        </g>
+                        <g transform="translate(4.000000, 24.000000)" id="Shape">
+                            <line x1="0.5846" y1="4.9584" x2="4.0062" y2="2.8868"></line>
+                            <line x1="4.1418" y1="2.8044" x2="7.5636" y2="0.7328"></line>
+                        </g>
+                        <circle id="Oval" cx="15.9366" cy="22.2806" r="4.9482"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

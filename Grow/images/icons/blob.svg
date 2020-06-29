@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="49px" viewBox="0 0 48 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-v2-Copy-5" transform="translate(-1046.000000, -3671.000000)" stroke="#11EEBB" stroke-width="2">
+            <g id="Group-29-Copy-5" transform="translate(920.000000, 3569.000000)">
+                <g id="Group-17" transform="translate(99.000000, 103.000000)">
+                    <g id="Group" transform="translate(28.000000, 0.000000)">
+                        <path d="M11.852,34.033 C5.972,32.6552 1.95399252e-14,25.8204 1.95399252e-14,17.051 C1.95399252e-14,7.8932 7.0502,-3.19744231e-14 15.258,-3.19744231e-14 L30.2996,-3.19744231e-14 C38.5074,-3.19744231e-14 45.1616,7.8424 45.1616,17.0002 C45.1616,26.0628 38.5074,34 30.2996,34 L25.5616,34 L11.852,45.56 L11.852,34.033 L11.852,34.033 Z" id="Shape"></path>
+                        <path d="M31.6974,10.5608 C29.6102,8.431 26.2262,8.431 24.1392,10.5608 L22.8792,11.8462 L21.6194,10.561 C19.5322,8.4312 16.148,8.4312 14.061,10.561 C11.9738,12.6908 11.9738,16.1438 14.061,18.2736 L22.8792,27.271 L31.6972,18.2736 C33.7846,16.1438 33.7846,12.6908 31.6974,10.5608 L31.6974,10.5608 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
